@@ -47,27 +47,27 @@ blockquote, q {
 	}
 
 table, th, td {
-	border-collapse: collapse;
-	border: 1px solid #ccc;
-	line-height: 1.5;
+		border-collapse: collapse;
+		border: 1px solid #ccc;
+		line-height: 1.5;
 	}
 	
 	table.type01 th {
-	width: 150px;
-	padding: 10px;
-	font-weight: bold;
-	vertical-align: top;
-	background: #3f3f3f;
-	color: #ffffff;
+		width: 150px;
+		padding: 10px;
+		font-weight: bold;
+		vertical-align: top;
+		background: #3f3f3f;
+		color: #ffffff;
 	}
 	table.type01 td {
-	width: 350px;
-	padding: 10px;
-	vertical-align: top;
+		/* width: 350px; */
+		padding: 8px;
+		vertical-align: top;
 	}
 	
 	tr:nth-child(even) {
-	background: #d9d9d9;
+		background: #d9d9d9;
 	}
 
 body {
@@ -135,14 +135,9 @@ input, select, textarea {
 		line-height: 1.5em;
 	}
 
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-		color: inherit;
-		text-decoration: none;
+	h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
+		color: #333;
 	}
-
-		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
-			color: #333;
-		}
 
 	h2 {
 		font-size: 2em;
@@ -1932,6 +1927,10 @@ input, select, textarea {
 
 			.item header h3 {
 				font-size: 1em;
+			}
+
+			.item a {
+
 			}
 
 /* Icons */
