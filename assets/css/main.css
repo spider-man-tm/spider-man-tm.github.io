@@ -13,7 +13,7 @@ pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
+form, label, legend, caption, table, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
@@ -46,10 +46,29 @@ blockquote, q {
 		content: none;
 	}
 
-table {
+table, th, td {
 	border-collapse: collapse;
-	border-spacing: 0;
-}
+	border: 1px solid #ccc;
+	line-height: 1.5;
+	}
+	
+	table.type01 th {
+	width: 150px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	background: #3f3f3f;
+	color: #ffffff;
+	}
+	table.type01 td {
+	width: 350px;
+	padding: 10px;
+	vertical-align: top;
+	}
+	
+	tr:nth-child(even) {
+	background: #d9d9d9;
+	}
 
 body {
 	-webkit-text-size-adjust: none;
@@ -208,9 +227,13 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	ul, ol, dl, table {
+	ul, ol, dl {
 		margin-bottom: 2em;
 		font-size: 1em;
+	}
+
+	table {
+		font-size: 0.6em;
 	}
 
 	p {
@@ -1785,6 +1808,12 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
+			margin: 0 0 2em 0;
+		}
+
+		.image.featured-mini {
+			display: block;
+			width: 60%;
 			margin: 0 0 2em 0;
 		}
 
