@@ -53,7 +53,7 @@ table, th, td {
 	}
 	
 	table.type01 th {
-		width: 150px;
+		/* width: 300px; */
 		padding: 10px;
 		font-weight: bold;
 		vertical-align: top;
@@ -69,6 +69,18 @@ table, th, td {
 	tr:nth-child(even) {
 		background: #d9d9d9;
 	}
+
+  th.table-solo {
+    width: 120px;
+  }
+  th.table-ranking {
+    width: 180px;
+  }
+  th.table-data {
+    width: 260px;
+  }  th.table-content {
+    width: 470px;
+  }
 
 body {
 	-webkit-text-size-adjust: none;
