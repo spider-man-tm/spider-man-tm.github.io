@@ -246,6 +246,12 @@ h6 a strong {
   color: #333;
 }
 
+h1 {
+  font-size: 2.5em;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
 h2 {
   font-size: 2em;
   letter-spacing: -1px;
@@ -2006,6 +2012,9 @@ input[type="reset"],
 button,
 .button {
   position: relative;
+  width: 320px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: inline-block;
   border-radius: 0.35em;
   color: #fff !important;
