@@ -128,7 +128,7 @@
 
             <div class="row">
               <!-- NPB Data Visualization -->
-              <div class="col-4 col-12-mobile">
+              <v-col md="4" sm="12">
                 <v-card class="mx-auto" elevation="9">
                   <v-img
                     src="assets/images/portfolio/portfolio08.png"
@@ -164,10 +164,10 @@
                     </div>
                   </v-expand-transition>
                 </v-card>
-              </div>
+              </v-col>
 
               <!-- AI 23 ku -->
-              <div class="col-4 col-12-mobile">
+              <v-col md="4" sm="12">
                 <v-card class="mx-auto" elevation="9">
                   <v-img
                     src="assets/images/portfolio/portfolio09.png"
@@ -203,10 +203,10 @@
                     </div>
                   </v-expand-transition>
                 </v-card>
-              </div>
+              </v-col>
 
               <!-- プロ野球ツイートbot -->
-              <div class="col-4 col-12-mobile">
+              <v-col md="4" sm="12">
                 <v-card class="mx-auto" elevation="9">
                   <v-img
                     src="assets/images/portfolio/portfolio04.png"
@@ -242,7 +242,7 @@
                     </div>
                   </v-expand-transition>
                 </v-card>
-              </div>
+              </v-col>
             </div>
           </div>
         </section>
@@ -290,7 +290,7 @@
                   elevation="8"
                   max-width="100%"
                 >
-                  <v-slide-group mobile-break-point="1000" show-arrows center-active>
+                  <v-slide-group show-arrows center-active>
                     <template v-slot:next>
                       <v-icon color="orange" large>mdi-hand-pointing-right</v-icon>
                     </template>
@@ -300,7 +300,7 @@
                     <v-slide-item v-for="(slide, i) in slides" :key="i">
                       <v-card-title>
                         <a :href="slide.url" target="_blank">
-                          <v-img :src="slide.image" contain width="700" height="350"></v-img>
+                          <img :src="slide.image" width="200"/>
                         </a>
                       </v-card-title>
                     </v-slide-item>
@@ -496,7 +496,7 @@
               },
               {
                 image: 'assets/images/index/hatena.png',
-                url: 'https://spider-man-dance.hatenaoutput.com/archive'
+                url: 'https://spider-man-dance.hatenablog.com/'
               }
             ]
           }
