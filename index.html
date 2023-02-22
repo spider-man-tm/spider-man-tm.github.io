@@ -92,14 +92,6 @@
           <p>このHPでは自身のポートフォリオや趣味に関する話題について掲載しています</p>
         </header>
 
-        <footer>
-          <a href="#about" class="button scrolly">About me</a>
-          <a href="#portfolio" class="button scrolly">Portfolio</a>
-          <a href="#qualification" class="button scrolly">Qualification</a>
-          <a href="#output" class="button scrolly">Output</a>
-          <a href="#skill" class="button scrolly">Skill</a>
-        </footer>
-
       </div>
     </section>
 
@@ -283,31 +275,67 @@
               <h1><strong>Output</strong></h2>
             </header>
 
-            <div closs="row">
-              <div class="col-12 col-12-mobile">
-                <v-sheet
-                  class="mt-5 mx-auto"
-                  elevation="8"
-                  max-width="100%"
-                >
-                  <v-slide-group show-arrows center-active>
-                    <template v-slot:next>
-                      <v-icon color="orange" large>mdi-hand-pointing-right</v-icon>
-                    </template>
-                    <template v-slot:prev>
-                      <v-icon color="orange" large>mdi-hand-pointing-left</v-icon>
-                    </template>
-                    <v-slide-item v-for="(slide, i) in slides" :key="i">
-                      <v-card-title>
-                        <a :href="slide.url" target="_blank">
-                          <img :src="slide.image" width="200"/>
-                        </a>
-                      </v-card-title>
-                    </v-slide-item>
-                  </v-slide-group>
-                </v-sheet>
-              </div>
-            </div>
+            <template>
+              <v-row class="text-center">
+                <v-col cols="12">
+                  <v-carousel v-model="model">
+                    <v-carousel-item>
+                      <v-container fill-height>
+                        <v-col md="4" sm="12">
+                          <v-card min-height="300">
+                            <v-card-actions class="justify-center">
+                              <a :href="slides[0].url" target="_blank">
+                                <img :src="slides[0].image" class="img_carousel"/>
+                              </a>
+                            </v-card-actions>
+                          </v-card>
+                        </v-col>
+                        <v-col md="4" sm="12">
+                          <v-card min-height="300">
+                            <v-card-actions class="justify-center">
+                              <a :href="slides[1].url" target="_blank">
+                                <img :src="slides[1].image" class="img_carousel"/>
+                              </a>
+                            </v-card-actions>
+                          </v-card>
+                        </v-col>
+                        <v-col md="4" sm="12">
+                          <v-card min-height="300">
+                            <v-card-actions class="justify-center">
+                              <a :href="slides[2].url" target="_blank">
+                                <img :src="slides[2].image" class="img_carousel"/>
+                              </a>
+                            </v-card-actions>
+                          </v-card>
+                        </v-col>
+                      </v-container>
+                    </v-carousel-item>
+                    <v-carousel-item>
+                      <v-container fill-height>
+                        <v-col md="4" sm="12">
+                            <v-card min-height="300">
+                              <v-card-actions class="justify-center">
+                                <a :href="slides[3].url" target="_blank">
+                                  <img :src="slides[3].image" class="img_carousel"/>
+                                </a>
+                              </v-card-actions>
+                            </v-card>
+                        </v-col>
+                        <v-col md="4" sm="12">
+                            <v-card min-height="300">
+                              <v-card-actions class="justify-center">
+                                <a :href="slides[4].url" target="_blank">
+                                  <img :src="slides[4].image" class="img_carousel"/>
+                                </a>
+                              </v-card-actions>
+                            </v-card>
+                        </v-col>
+                      </v-container>
+                    </v-carousel-item>
+                  </v-carousel>
+                </v-col>
+              </v-row>
+            </template>
 
           </div>
         </section>

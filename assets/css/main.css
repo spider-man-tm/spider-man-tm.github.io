@@ -2251,7 +2251,7 @@ button:active,
   color: #fff;
   background-color: #81918E;
   background-image: url("../../images/index/banner.jpg");
-  font-size: 0.7em;
+  font-size: 1.2em;
 }
 
 /* Main */
@@ -3226,4 +3226,14 @@ button:active,
   -webkit-object-position: right;
   -ms-object-position: right;
   object-position: right;
+}
+
+.carousel {
+  width: 50%;
+  height: 100%;
+}
+
+.img_carousel {
+  width: 200px;
+  height: 200px;
 }
