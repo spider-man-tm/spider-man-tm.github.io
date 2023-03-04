@@ -53,8 +53,7 @@
           <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-user-circle">Portfolio</span></a></li>
           <li><a href="#qualification" id="qualification-link"><span
             class="icon solid fa-medal">Qualification</span></a></li>
-            <li><a href="#output" id="output-link"><span class="icon solid fa-book-open">Output</span></a></li>
-          <li><a href="#skill" id="skill-link"><span class="icon solid fa-address-card">Skill</span></a></li>
+          <li><a href="#output" id="output-link"><span class="icon solid fa-book-open">Output</span></a></li>
         </ul>
       </nav>
 
@@ -118,9 +117,54 @@
               <h1><strong>Portfolio</strong></h2>
             </header>
 
-            <div class="row">
+            <v-row>
+              <!-- Asset Management Simulation -->
+              <v-col cols="12" md="4">
+                <v-card class="mx-auto" elevation="9">
+                  <v-img
+                    src="assets/images/portfolio/portfolio00.png"
+                  ></v-img>
+                  <v-card-title>
+                    資産管理シミュレーション
+                  </v-card-title>
+                  <v-card-subtitle>
+                    Vue3 + Flask のSPA
+                  </v-card-subtitle>
+                  <v-card-actions>
+                    <a href="https://github.com/spider-man-tm/asset-management-simulation-frontend" class="icon brands fa-github" target="_blank"><span
+                      class="label">Github</span></a>
+                    <v-spacer></v-spacer>
+                    <a href="https://github.com/spider-man-tm/asset-management-simulation-backend" class="icon brands fa-github" target="_blank"><span
+                      class="label">Github</span></a>
+                    <v-spacer></v-spacer>
+                    <v-spacer></v-spacer>
+                    <v-btn
+                      color="orange lighten-2"
+                      href="https://okane-no-keisan.com/"
+                      text
+                    >
+                      Link
+                    </v-btn>
+                    <v-btn
+                      icon
+                      @click="showPortfolio1 = !showPortfolio1"
+                    >
+                      <v-icon>{{ showPortfolio1 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                    </v-btn>
+                  </v-card-actions>
+                  <v-expand-transition>
+                    <div v-show="showPortfolio1">
+                      <v-divider></v-divider>
+                      <v-card-text>
+                        Vue3(Vuetify3), FirebaseHosting, Flask, Cloud Runなどを利用した資産額・配当金のシミュレーションApp
+                      </v-card-text>
+                    </div>
+                  </v-expand-transition>
+                </v-card>
+              </v-col>
+
               <!-- NPB Data Visualization -->
-              <v-col md="4" sm="12">
+              <v-col cols="12" md="4">
                 <v-card class="mx-auto" elevation="9">
                   <v-img
                     src="assets/images/portfolio/portfolio08.png"
@@ -142,13 +186,13 @@
                     </v-btn>
                     <v-btn
                       icon
-                      @click="showPortfolio1 = !showPortfolio1"
+                      @click="showPortfolio2 = !showPortfolio2"
                     >
-                      <v-icon>{{ showPortfolio1 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                      <v-icon>{{ showPortfolio2 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
                     </v-btn>
                   </v-card-actions>
                   <v-expand-transition>
-                    <div v-show="showPortfolio1">
+                    <div v-show="showPortfolio2">
                       <v-divider></v-divider>
                       <v-card-text>
                         プロ野球12球団の個人・チーム別成績を可視化したWebサイトです。2021年分から現在のまでのデータを確認できます。
@@ -159,7 +203,7 @@
               </v-col>
 
               <!-- AI 23 ku -->
-              <v-col md="4" sm="12">
+              <v-col cols="12" md="4">
                 <v-card class="mx-auto" elevation="9">
                   <v-img
                     src="assets/images/portfolio/portfolio09.png"
@@ -181,13 +225,13 @@
                     </v-btn>
                     <v-btn
                       icon
-                      @click="showPortfolio2 = !showPortfolio2"
+                      @click="showPortfolio3 = !showPortfolio3"
                     >
-                      <v-icon>{{ showPortfolio2 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                      <v-icon>{{ showPortfolio3 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
                     </v-btn>
                   </v-card-actions>
                   <v-expand-transition>
-                    <div v-show="showPortfolio2">
+                    <div v-show="showPortfolio3">
                       <v-divider></v-divider>
                       <v-card-text>
                         iPhoneで撮影した写真や保存されたイメージを元にAIが東京23区どこっぽいかを判定するiOSアプリです。Apple Storeからダウンロード可能です。
@@ -196,9 +240,11 @@
                   </v-expand-transition>
                 </v-card>
               </v-col>
+            </v-row>
 
+            <v-row>
               <!-- プロ野球ツイートbot -->
-              <v-col md="4" sm="12">
+              <v-col cols="12" md="4">
                 <v-card class="mx-auto" elevation="9">
                   <v-img
                     src="assets/images/portfolio/portfolio04.png"
@@ -220,13 +266,13 @@
                     </v-btn>
                     <v-btn
                       icon
-                      @click="showPortfolio3 = !showPortfolio3"
+                      @click="showPortfolio4 = !showPortfolio4"
                     >
-                      <v-icon>{{ showPortfolio3 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                      <v-icon>{{ showPortfolio4 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
                     </v-btn>
                   </v-card-actions>
                   <v-expand-transition>
-                    <div v-show="showPortfolio3">
+                    <div v-show="showPortfolio4">
                       <v-divider></v-divider>
                       <v-card-text>
                         毎日、指定のハッシュタグが付けられた12球団ファンのツイートを自動で取得し、WordCloudで可視化した結果を定期配信するTwitter Botです。
@@ -235,7 +281,7 @@
                   </v-expand-transition>
                 </v-card>
               </v-col>
-            </div>
+            </v-row>
           </div>
         </section>
 
@@ -340,143 +386,6 @@
           </div>
         </section>
 
-        <!-- Skill -->
-        <section id="skill" class="two">
-          <div class="container">
-
-            <header>
-              <h1><strong>Skill</strong></h2>
-            </header>
-
-            <div class="col-12 col-12-mobile">
-              <div class="row">
-                <h2>できること</h3>
-              </div>
-              <br />
-              <h3>ML</h4>
-              <br />
-              <ul>
-                <li align="left">
-                  <font size=4.7em>テーブルデータに対して回帰・分類などのタスクに対するモデルを構築できる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>画像データに対して、分類・物体検出・セグメンテーションなどのタスクに対するモデルを構築できる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>テキストデータ（NLP）に対して、分類・文書生成・NERなどのタスクに対するモデルを構築できる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>テーブル・画像・テキストなどのデータを複合的に扱うマルチモーダルモデルを構築できる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>PyTorch, PyTorchLightning, Tesnforflow, Kerasなどの各種ディープラーニングフレームワークを扱うことができる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>
-                    タスクに応じた訓練データと評価データの適切なチョイス、パラメータチューニング、精度指標の選定、統計知識や可視化スキルを活かしたEDAなど、適切なMLデザインやモデル評価スキルを持っている</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>シンプルな分析環境に関しては自分自身で作ることができる。Docker, CUDA, Jupyterなどの基本がわかる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>numpy, pandas, openCV, mecab, janome, .etc などの各種ライブラリを使用して適切な前処理を行うことができる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>Tensorboard, Weights&Biasなどを使用しての学習管理ができる</font>
-                </li>
-              </ul>
-
-              <br />
-              <h3>データエンジニアリング</h4>
-              <br />
-              <ul>
-                <li align="left">
-                  <font size=4.7em>基本的なSQLの文法を理解している</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>Airbyteを利用して幾つかのデータソース（GoogleAnalytics, GoogleSearchConsole,
-                    .etc）のデータをBigQueryまたはSnowflakeなどのDWHへ保存できる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>PySpark, Snowpark for Pythonの基礎文法を理解している</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>Elasticsearchへのインデックス登録、および検索するための基礎的なクエリが書ける</font>
-                </li>
-              </ul>
-
-              <br />
-              <h3>バックエンド</h4>
-              <br />
-              <ul>
-                <li align="left">
-                  <font size=4.7em>AWS API Gateway + AWS Lambdaを使って簡易的なRestAPIを作ることができる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>Python Dashのフレームワークを利用した簡易的なダッシュボードAppを構築することができる</font>
-                </li>
-              </ul>
-
-              <br />
-              <h3>フロントエンド</h4>
-              <br />
-              <ul>
-                <li align="left">
-                  <font size=4.7em>Vue.jsやjQueryの初歩技術を把握しており、ドキュメントを参考にしつつ簡易的なSPA(Single Page Application)を実装できる</font>
-                </li>
-              </ul>
-
-              <br />
-              <h3>Webサイト制作</h4>
-              <br />
-              <ul>
-                <li align="left">
-                  <font size=4.7em>HTML/CSS, JavaScript（jQuery）の基本的文法を理解し、簡易的な静的webサイトを作ることができる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>S3を利用した静的Webホスティング、Certificate
-                    Managerを利用したSSL証明書の発行、CloudFrontを利用した静的コンテンツの配信、Route53によるドメイン管理など、AWSの基本的サービスを利用して、静的Webサイトをデプロイできる
-                  </font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>SEOの基礎知識 (Google Analytics, Google Search Console, OGP, Twitterカード, titleタグ, etc.) を有している
-                  </font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>Google Adasenseによる広告タグの実装をすることができる
-                  </font>
-                </li>
-              </ul>
-
-              <br />
-              <h3>スクレイピング</h4>
-              <br />
-              <ul>
-                <li align="left">
-                  <font size=4.7em>Python（BeautifulSoup, Selenium）を使ったwebスクレイピングができる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>Node.js（Cheerio）を使った簡易的なwebスクレイピングができる</font>
-                </li>
-                <li align="left">
-                  <font size=4.7em>AWS ECSなどを利用することで定期的にスクレイピング処理を行うコンテナを作ることができる</font>
-                </li>
-              </ul>
-
-              <br />
-              <h3>モバイル</h4>
-              <br />
-              <ul>
-                <li align="left">
-                  <font size=4.7em>PyTorchやTensorflowなどのフレームワークで学習されたモデルをCoreMLに変換し、iOS Appに組み込むために必要な一連の作業をこなすことができる</font>
-                </li>
-              </ul>
-
-            </div>
-
-          </div>
-        </section>
-
         <!-- Footer -->
         <div id="footer">
           <p>Copyright &copy; 2022 MAKABE Takayoshi. All Rights Reserved.</p>
@@ -505,6 +414,7 @@
             showPortfolio1: false,
             showPortfolio2: false,
             showPortfolio3: false,
+            showPortfolio4: false,
             slides: [
               {
                 image: 'assets/images/index/qiita.png',
