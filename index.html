@@ -41,7 +41,7 @@
       <div id="logo">
         <span class="image avatar48"><img src="assets/images/index/profile.jpg" alt="" /></span>
         <h1 id="title">Takayoshi Makabe</h1>
-        <p>Data Scientist</p>
+        <p>Saitama, Japan</p>
       </div>
 
       <!-- Nav -->
@@ -51,9 +51,8 @@
           <li><a href="#top" id="top-link"><span class="icon solid fa-home">Top</span></a></li>
           <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
           <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-user-circle">Portfolio</span></a></li>
-          <li><a href="#qualification" id="qualification-link"><span
-            class="icon solid fa-medal">Qualification</span></a></li>
-          <li><a href="#output" id="output-link"><span class="icon solid fa-book-open">Output</span></a></li>
+          <li><a href="#output" id="output-link"><span class="icon solid fa-book-open">Output & Qualification</span></a>
+          </li>
         </ul>
       </nav>
 
@@ -97,304 +96,223 @@
     <div id="app">
       <v-app>
         <v-main>
-        <!-- About Me -->
-        <section id="about" class="three">
-          <div class="container">
+          <!-- About Me -->
+          <section id="about" class="three">
+            <div class="container">
 
-            <header>
-              <h1><strong>About Me</strong></h2>
-            </header>
+              <header>
+                <h1><strong>About Me</strong></h2>
+              </header>
 
-            <img class="image featured" src="assets/images/index/programming.jpg" alt="" />
-          </div>
-        </section>
+              <img class="image featured" src="assets/images/index/programming.jpg" alt="" />
+            </div>
+          </section>
 
-        <!-- Portfolio -->
-        <section id="portfolio" class="two">
-          <div class="container">
+          <!-- Portfolio -->
+          <section id="portfolio" class="two">
+            <div class="container">
 
-            <header>
-              <h1><strong>Portfolio</strong></h2>
-            </header>
+              <header>
+                <h1><strong>Portfolio</strong></h2>
+              </header>
 
-            <v-row>
-              <!-- Asset Management Simulation -->
-              <v-col cols="12" md="4">
-                <v-card class="mx-auto" elevation="9">
-                  <v-img
-                    src="assets/images/portfolio/portfolio00.png"
-                  ></v-img>
-                  <v-card-title>
-                    資産管理シミュレーション
-                  </v-card-title>
-                  <v-card-subtitle>
-                    Vue3 + Flask のSPA
-                  </v-card-subtitle>
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <a href="https://github.com/spider-man-tm/asset-management-simulation-frontend" class="icon brands fa-github" target="_blank"><span
-                      class="label">Github</span></a>
-                    <v-spacer></v-spacer>
-                    <a href="https://github.com/spider-man-tm/asset-management-simulation-backend" class="icon brands fa-github" target="_blank"><span
-                      class="label">Github</span></a>
-                    <v-spacer></v-spacer>
-                    <a href="https://github.com/spider-man-tm/asset-management-simulation-dbt" class="icon brands fa-github" target="_blank"><span
-                      class="label">Github</span></a>
-                    <v-spacer></v-spacer>
-                    <v-spacer></v-spacer>
-                    <v-btn
-                      color="orange lighten-2"
-                      href="https://okane-no-keisan.com/"
-                      text
-                    >
-                      Link
-                    </v-btn>
-                    <v-btn
-                      icon
-                      @click="showPortfolio1 = !showPortfolio1"
-                    >
-                      <v-icon>{{ showPortfolio1 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                    </v-btn>
-                  </v-card-actions>
-                  <v-expand-transition>
-                    <div v-show="showPortfolio1">
-                      <v-divider></v-divider>
-                      <v-card-text>
-                        Vue3(Vuetify3), FirebaseHosting, Flask, Cloud Run, dbtなどを利用した資産額・配当金のシミュレーションApp
-                      </v-card-text>
-                    </div>
-                  </v-expand-transition>
-                </v-card>
-              </v-col>
+              <v-row>
+                <!-- Asset Management Simulation -->
+                <v-col cols="12" md="4">
+                  <v-card class="mx-auto" elevation="9">
+                    <v-img src="assets/images/portfolio/portfolio00.png"></v-img>
+                    <v-card-title>
+                      資産管理シミュレーション
+                    </v-card-title>
+                    <v-card-subtitle>
+                      Vue3 + Flask のSPA
+                    </v-card-subtitle>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <a href="https://github.com/spider-man-tm/asset-management-simulation-frontend"
+                        class="icon brands fa-github" target="_blank"><span class="label">Github</span></a>
+                      <v-spacer></v-spacer>
+                      <a href="https://github.com/spider-man-tm/asset-management-simulation-backend"
+                        class="icon brands fa-github" target="_blank"><span class="label">Github</span></a>
+                      <v-spacer></v-spacer>
+                      <a href="https://github.com/spider-man-tm/asset-management-simulation-dbt"
+                        class="icon brands fa-github" target="_blank"><span class="label">Github</span></a>
+                      <v-spacer></v-spacer>
+                      <v-spacer></v-spacer>
+                      <v-btn color="orange lighten-2" href="https://okane-no-keisan.com/" text>
+                        Link
+                      </v-btn>
+                      <v-btn icon @click="showPortfolio1 = !showPortfolio1">
+                        <v-icon>{{ showPortfolio1 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                      </v-btn>
+                    </v-card-actions>
+                    <v-expand-transition>
+                      <div v-show="showPortfolio1">
+                        <v-divider></v-divider>
+                        <v-card-text>
+                          Vue3(Vuetify3), FirebaseHosting, Flask, Cloud Run, dbtなどを利用した資産額・配当金のシミュレーションApp
+                        </v-card-text>
+                      </div>
+                    </v-expand-transition>
+                  </v-card>
+                </v-col>
 
-              <!-- NPB Data Visualization -->
-              <v-col cols="12" md="4">
-                <v-card class="mx-auto" elevation="9">
-                  <v-img
-                    src="assets/images/portfolio/portfolio08.png"
-                  ></v-img>
-                  <v-card-title>
-                    NPB Data Visualization
-                  </v-card-title>
-                  <v-card-subtitle>
-                    プロ野球データの可視化サイト
-                  </v-card-subtitle>
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn
-                    color="orange lighten-2"
-                    href="https://npb-visualization.com/"
-                    text
-                    >
-                      Link
-                    </v-btn>
-                    <v-btn
-                      icon
-                      @click="showPortfolio2 = !showPortfolio2"
-                    >
-                      <v-icon>{{ showPortfolio2 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                    </v-btn>
-                  </v-card-actions>
-                  <v-expand-transition>
-                    <div v-show="showPortfolio2">
-                      <v-divider></v-divider>
-                      <v-card-text>
-                        プロ野球12球団の個人・チーム別成績を可視化したWebサイトです。2021年分から現在のまでのデータを確認できます。
-                      </v-card-text>
-                    </div>
-                  </v-expand-transition>
-                </v-card>
-              </v-col>
+                <!-- NPB Data Visualization -->
+                <v-col cols="12" md="4">
+                  <v-card class="mx-auto" elevation="9">
+                    <v-img src="assets/images/portfolio/portfolio08.png"></v-img>
+                    <v-card-title>
+                      NPB Data Visualization
+                    </v-card-title>
+                    <v-card-subtitle>
+                      プロ野球データの可視化サイト
+                    </v-card-subtitle>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn color="orange lighten-2" href="https://npb-visualization.com/" text>
+                        Link
+                      </v-btn>
+                      <v-btn icon @click="showPortfolio2 = !showPortfolio2">
+                        <v-icon>{{ showPortfolio2 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                      </v-btn>
+                    </v-card-actions>
+                    <v-expand-transition>
+                      <div v-show="showPortfolio2">
+                        <v-divider></v-divider>
+                        <v-card-text>
+                          プロ野球12球団の個人・チーム別成績を可視化したWebサイトです。2021年分から現在のまでのデータを確認できます。
+                        </v-card-text>
+                      </div>
+                    </v-expand-transition>
+                  </v-card>
+                </v-col>
 
-              <!-- AI 23 ku -->
-              <v-col cols="12" md="4">
-                <v-card class="mx-auto" elevation="9">
-                  <v-img
-                    src="assets/images/portfolio/portfolio09.png"
-                  ></v-img>
-                  <v-card-title>
-                    AI 23区
-                  </v-card-title>
-                  <v-card-subtitle>
-                    画像診断 iOS App
-                  </v-card-subtitle>
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn
-                    color="orange lighten-2"
-                    href="https://apps.apple.com/jp/app/ai-23%E5%8C%BA/id1630656604"
-                    text
-                    >
-                      Link
-                    </v-btn>
-                    <v-btn
-                      icon
-                      @click="showPortfolio3 = !showPortfolio3"
-                    >
-                      <v-icon>{{ showPortfolio3 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                    </v-btn>
-                  </v-card-actions>
-                  <v-expand-transition>
-                    <div v-show="showPortfolio3">
-                      <v-divider></v-divider>
-                      <v-card-text>
-                        iPhoneで撮影した写真や保存されたイメージを元にAIが東京23区どこっぽいかを判定するiOSアプリです。Apple Storeからダウンロード可能です。
-                      </v-card-text>
-                    </div>
-                  </v-expand-transition>
-                </v-card>
-              </v-col>
-            </v-row>
-
-            <v-row>
-              <!-- プロ野球ツイートbot -->
-              <v-col cols="12" md="4">
-                <v-card class="mx-auto" elevation="9">
-                  <v-img
-                    src="assets/images/portfolio/portfolio04.png"
-                  ></v-img>
-                  <v-card-title>
-                    プロ野球ツイートBot
-                  </v-card-title>
-                  <v-card-subtitle>
-                    ワードクラウドを定期的に配信するBot
-                  </v-card-subtitle>
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn
-                    color="orange lighten-2"
-                    href="https://note.com/spider_man_x/n/n3055ead66f2d"
-                    text
-                    >
-                      Link
-                    </v-btn>
-                    <v-btn
-                      icon
-                      @click="showPortfolio4 = !showPortfolio4"
-                    >
-                      <v-icon>{{ showPortfolio4 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                    </v-btn>
-                  </v-card-actions>
-                  <v-expand-transition>
-                    <div v-show="showPortfolio4">
-                      <v-divider></v-divider>
-                      <v-card-text>
-                        毎日、指定のハッシュタグが付けられた12球団ファンのツイートを自動で取得し、WordCloudで可視化した結果を定期配信するTwitter Botです。
-                      </v-card-text>
-                    </div>
-                  </v-expand-transition>
-                </v-card>
-              </v-col>
-            </v-row>
-          </div>
-        </section>
-
-        <!-- Qualification -->
-        <section id="qualification" class="two">
-          <div class="container">
-            <header>
-              <h1><strong>Qualification</strong></h2>
-            </header>
-            <ul>
-              <li align="left">
-                <font size=4.7em>Kaggle Master <a href="https://www.kaggle.com/spidermandance" target="_blank">[Account]</a></font>
-              </li>
-              <li align="left">
-                <font size=4.7em>AtCoder Green <a href="https://atcoder.jp/users/Spiderman_" target="_blank">[Account]</a></font>
-              </li>
-              <li align="left">
-                <font size=4.7em>基本情報技術者</font>
-              </li>
-              <li align="left">
-                <font size=4.7em>AWSソリューションアーキテクト -アソシエイト-</font>
-              </li>
-              <li align="left">
-                <font size=4.7em><a href="https://www.toukei-kentei.jp/koe/koe-7335/"
-                    target="_blank">統計検定成績優秀者インタビュー（2019.06）</a>
-                </font>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- Output -->
-        <section id="output" class="two">
-          <div class="container">
-
-            <header>
-              <h1><strong>Output</strong></h2>
-            </header>
-
-            <template>
-              <v-row class="text-center">
-                <v-col cols="12">
-                  <v-carousel v-model="model">
-                    <v-carousel-item>
-                      <v-container fill-height>
-                        <v-col cols="4" xs="12">
-                          <v-card>
-                            <v-card-actions class="justify-center">
-                              <a :href="slides[0].url" target="_blank">
-                                <img :src="slides[0].image" class="img_carousel"/>
-                              </a>
-                            </v-card-actions>
-                          </v-card>
-                        </v-col>
-                        <v-col cols="4" xs="12">
-                          <v-card>
-                            <v-card-actions class="justify-center">
-                              <a :href="slides[1].url" target="_blank">
-                                <img :src="slides[1].image" class="img_carousel"/>
-                              </a>
-                            </v-card-actions>
-                          </v-card>
-                        </v-col>
-                        <v-col cols="4" xs="12">
-                          <v-card>
-                            <v-card-actions class="justify-center">
-                              <a :href="slides[2].url" target="_blank">
-                                <img :src="slides[2].image" class="img_carousel"/>
-                              </a>
-                            </v-card-actions>
-                          </v-card>
-                        </v-col>
-                      </v-container>
-                    </v-carousel-item>
-                    <v-carousel-item>
-                      <v-container fill-height>
-                        <v-col cols="4" xs="12">
-                          <v-card>
-                            <v-card-actions class="justify-center">
-                              <a :href="slides[3].url" target="_blank">
-                                <img :src="slides[3].image" class="img_carousel"/>
-                              </a>
-                            </v-card-actions>
-                          </v-card>
-                        </v-col>
-                        <v-col cols="4" xs="12">
-                          <v-card>
-                            <v-card-actions class="justify-center">
-                              <a :href="slides[4].url" target="_blank">
-                                <img :src="slides[4].image" class="img_carousel"/>
-                              </a>
-                            </v-card-actions>
-                          </v-card>
-                        </v-col>
-                      </v-container>
-                    </v-carousel-item>
-                  </v-carousel>
+                <!-- AI 23 ku -->
+                <v-col cols="12" md="4">
+                  <v-card class="mx-auto" elevation="9">
+                    <v-img src="assets/images/portfolio/portfolio09.png"></v-img>
+                    <v-card-title>
+                      AI 23区
+                    </v-card-title>
+                    <v-card-subtitle>
+                      画像診断 iOS App
+                    </v-card-subtitle>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn color="orange lighten-2" href="https://apps.apple.com/jp/app/ai-23%E5%8C%BA/id1630656604"
+                        text>
+                        Link
+                      </v-btn>
+                      <v-btn icon @click="showPortfolio3 = !showPortfolio3">
+                        <v-icon>{{ showPortfolio3 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                      </v-btn>
+                    </v-card-actions>
+                    <v-expand-transition>
+                      <div v-show="showPortfolio3">
+                        <v-divider></v-divider>
+                        <v-card-text>
+                          iPhoneで撮影した写真や保存されたイメージを元にAIが東京23区どこっぽいかを判定するiOSアプリです。Apple Storeからダウンロード可能です。
+                        </v-card-text>
+                      </div>
+                    </v-expand-transition>
+                  </v-card>
                 </v-col>
               </v-row>
-            </template>
 
+              <v-row>
+                <!-- プロ野球ツイートbot -->
+                <v-col cols="12" md="4">
+                  <v-card class="mx-auto" elevation="9">
+                    <v-img src="assets/images/portfolio/portfolio04.png"></v-img>
+                    <v-card-title>
+                      プロ野球ツイートBot
+                    </v-card-title>
+                    <v-card-subtitle>
+                      ワードクラウドを定期的に配信するBot
+                    </v-card-subtitle>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn color="orange lighten-2" href="https://note.com/spider_man_x/n/n3055ead66f2d" text>
+                        Link
+                      </v-btn>
+                      <v-btn icon @click="showPortfolio4 = !showPortfolio4">
+                        <v-icon>{{ showPortfolio4 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                      </v-btn>
+                    </v-card-actions>
+                    <v-expand-transition>
+                      <div v-show="showPortfolio4">
+                        <v-divider></v-divider>
+                        <v-card-text>
+                          毎日、指定のハッシュタグが付けられた12球団ファンのツイートを自動で取得し、WordCloudで可視化した結果を定期配信するTwitter Botです。
+                        </v-card-text>
+                      </div>
+                    </v-expand-transition>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </div>
+          </section>
+
+          <!-- Output & Qualification -->
+          <section id="output" class="two">
+            <div class="container">
+              <header>
+                <h1><strong>Output & Qualification</strong></h2>
+              </header>
+              <v-row>
+                <!-- 受賞歴 -->
+                <v-col cols="12" md="4">
+                  <h3>受賞</h3>
+                  <ul>
+                    <li align="left">
+                      <font size=4.8em>Kaggle Master <a href="https://www.kaggle.com/spidermandance"
+                          target="_blank">[Account]</a></font>
+                    </li>
+                    <li align="left">
+                      <font size=4.8em>AtCoder Green <a href="https://atcoder.jp/users/Spiderman_"
+                          target="_blank">[Account]</a></font>
+                    </li>
+                  </ul>
+                </v-col>
+
+                <!-- 資格 -->
+                <v-col cols="12" md="4">
+                  <h3>資格</h3>
+                  <ul>
+                    <li align="left">
+                      <font size=4.8em>基本情報技術者</font>
+                    </li>
+                    <li align="left">
+                      <font size=4.8em>AWSソリューションアーキテクト -アソシエイト-</font>
+                    </li>
+                    <li align="left">
+                      <font size=4.8em>統計検定2級<a href="https://www.toukei-kentei.jp/koe/koe-7335/"
+                          target="_blank">（成績優秀者合格）</a>
+                      </font>
+                    </li>
+                  </ul>
+                </v-col>
+
+                <!-- 資格 -->
+                <v-col cols="12" md="4">
+                  <h3>OSS</h3>
+                  <ul>
+                    <li align="left">
+                      <font size=4.8em><a href="https://github.com/hatena/hatenablog-workflows/pull/24"
+                          target="_blank">https://github.com/hatena/hatenablog-workflows/pull/24</a></font>
+                    </li>
+                  </ul>
+                </v-col>
+              </v-row>
+
+            </div>
+          </section>
+
+          <!-- Footer -->
+          <div id="footer">
+            <p>Copyright &copy; 2022 MAKABE Takayoshi. All Rights Reserved.</p>
           </div>
-        </section>
-
-        <!-- Footer -->
-        <div id="footer">
-          <p>Copyright &copy; 2022 MAKABE Takayoshi. All Rights Reserved.</p>
-        </div>
-      </v-main>
+        </v-main>
       </v-app>
     </div>
 
@@ -413,7 +331,7 @@
       new Vue({
         el: '#app',
         vuetify: new Vuetify(),
-        data () {
+        data() {
           return {
             showPortfolio1: false,
             showPortfolio2: false,
