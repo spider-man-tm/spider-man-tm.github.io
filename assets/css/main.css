@@ -255,6 +255,7 @@ h1 {
 h2 {
   font-size: 2em;
   letter-spacing: -1px;
+  text-align: center;
 }
 
 h2.alt {
