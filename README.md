@@ -1,4 +1,4 @@
-github.io
+My Port
 ====
 
 <br />
@@ -6,6 +6,8 @@ github.io
 ## Website URL
 - https://spider-man-tm.github.io/
 
-## My HP Image
-
-![fig1](https://github.com/spider-man-tm/readme_figure/blob/master/spider-man-tm.github.io/my-website-image.png)
+## 編集方法
+- hoge branchで作業
+- develop branchにPRを出す
+- develop branchに変更がマージされるタイミングでmain branchへリリースPRが自動作成される
+- 上記PRをマージしたらリリース完了
