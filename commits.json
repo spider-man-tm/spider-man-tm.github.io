@@ -1,0 +1,20 @@
+[
+  {
+    "author": {
+      "email": "makabe.takayoshi1117@gmail.com",
+      "name": "Takayoshi Makabe",
+      "username": "spider-man-tm"
+    },
+    "committer": {
+      "email": "makabe.takayoshi1117@gmail.com",
+      "name": "Takayoshi Makabe",
+      "username": "spider-man-tm"
+    },
+    "distinct": true,
+    "id": "ef325712a6f4d938070e98b44e13b8da64a3c328",
+    "message": "wip: GitHub Actions",
+    "timestamp": "2024-05-20T18:07:48+09:00",
+    "tree_id": "138c98aeb2aaf462f93f465f88f16a1927ac7c53",
+    "url": "https://github.com/spider-man-tm/spider-man-tm.github.io/commit/ef325712a6f4d938070e98b44e13b8da64a3c328"
+  }
+]
