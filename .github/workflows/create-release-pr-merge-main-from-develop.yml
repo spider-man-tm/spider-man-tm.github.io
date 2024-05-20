@@ -45,7 +45,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'merge: changes from develop to main'
+          commit-message: Merge changes from develop to main
           branch: merge/develop-to-main
           title: '【Auto】Merge changes from develop to main'
           body: ${{ steps.read_pr_body.outputs.pr_body }}
