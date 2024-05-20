@@ -35,14 +35,19 @@ jobs:
             File.write('pr_body.txt', template.result_with_hash(pull_requests: pull_requests))
           "
 
+      - name: Read PR body into environment variable
+        id: read_pr_body
+        run: |
+          pr_body=$(<pr_body.txt)
+          echo "::set-output name=pr_body::$pr_body"
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Merge changes from develop to main
+          commit-message: 'merge: changes from develop to main'
           branch: merge/develop-to-main
-          title: 'Merge changes from develop to main'
-          body: |
-            $(cat pr_body.txt)
+          title: '【Auto】Merge changes from develop to main'
+          body: ${{ steps.read_pr_body.outputs.pr_body }}
           base: main
           head: develop
