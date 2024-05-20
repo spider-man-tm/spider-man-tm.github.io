@@ -26,6 +26,9 @@ jobs:
         run: |
           echo "$PULL_REQUESTS" > commits.json
           ruby -rerb -rjson -e "
+            require 'erb'
+            require 'json'
+            require 'ostruct'
             commits = JSON.parse(File.read('commits.json'))
             pull_requests = commits.map { |commit| OpenStruct.new(to_checklist_item: \"- [ ] #{commit['message']}\") }
             template = ERB.new(File.read('.github/git-pr-release.develop-to-main.template'))
