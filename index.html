@@ -317,6 +317,36 @@
                   </v-card>
                 </v-col>
 
+                <!-- まちログ -->
+                <v-col cols="12" md="4">
+                  <v-card class="mx-auto" elevation="9">
+                    <v-img src="assets/images/portfolio/portfolio11.png"></v-img>
+                    <v-card-title>
+                      まちログ
+                    </v-card-title>
+                    <v-card-subtitle>
+                      地域別日記作成アプリ
+                    </v-card-subtitle>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn color="orange lighten-2" href="https://apps.apple.com/jp/app/まちログ/id6752947243" text>
+                        Link
+                      </v-btn>
+                      <v-btn icon @click="showPortfolio3 = !showPortfolio3">
+                        <v-icon>{{ showPortfolio3 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                      </v-btn>
+                    </v-card-actions>
+                    <v-expand-transition>
+                      <div v-show="showPortfolio3">
+                        <v-divider></v-divider>
+                        <v-card-text>
+                          都道府県・市町村ごとに絵日記を作成・管理することができます。目指せ！47都道府県制覇！
+                        </v-card-text>
+                      </div>
+                    </v-expand-transition>
+                  </v-card>
+                </v-col>
+
                 <!-- Asset Management Simulation -->
                 <v-col cols="12" md="4">
                   <v-card class="mx-auto" elevation="9">
